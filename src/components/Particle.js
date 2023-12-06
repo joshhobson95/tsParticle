@@ -1,6 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import './Particle.css'
+import './Particle.css';
+import Modal from "./Modal";
 
 
 export default function App() {
@@ -30,6 +31,12 @@ export default function App() {
 </div>
 <div className="white_square3">
 </div>
+
+
+
+<Modal />
+
+
          <Particles
         id="tsparticles"
         init={particlesInit}

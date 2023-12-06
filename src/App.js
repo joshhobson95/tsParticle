@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import './App.css';
 import ParticlesComponent from './components/Particle';
-import React, { useState } from "react";
-import ComponentOne from './components/ComponentOne';
+import Skills from './components/Skills';
 
 
 
@@ -15,10 +15,8 @@ function App() {
     <div className="App">
 
     <ParticlesComponent />
+    <Skills />
 
-  
-
-     
     </div>
   );
 }

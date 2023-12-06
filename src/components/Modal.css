@@ -1,0 +1,41 @@
+.modal_outer{
+    position: relative;
+    z-index: 3;
+
+}
+.modal_main{
+    display: flex;
+    justify-content: center;
+}
+
+.modal_left{
+    background-color:#d9d9d9;
+    height: 35vh;
+    width: 20vw;
+    padding: 66px;
+}
+.modal_left h2{
+    font-size: 28pt;
+    color: #d9d9d9;
+ -webkit-text-stroke-width: 0.8px;
+-webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.modal_right{
+    background-color: #242424;
+    height: 35vh;
+    width: 20vw;
+    padding: 66px;
+}
+.modal_right h2{
+    font-size: 28pt;
+    color: #242424;
+ -webkit-text-stroke-width: 0.25px;
+-webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+}
+.form_logo{
+opacity: 3%;
+}
