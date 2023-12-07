@@ -1,18 +1,24 @@
 .modal_outer{
     position: relative;
     z-index: 3;
+    display: flex;
+    justify-content: center;
 
 }
 .modal_main{
     display: flex;
     justify-content: center;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    height: 55vh;
+    width: 60vw;
+    overflow: hidden;
 }
 
 .modal_left{
     background-color:#d9d9d9;
-    height: 35vh;
-    width: 20vw;
-    padding: 66px;
+    width: 45%;
+    padding: 66px; 
 }
 .modal_left h2{
     font-size: 28pt;
@@ -20,11 +26,34 @@
  -webkit-text-stroke-width: 0.8px;
 -webkit-text-stroke-color: rgb(0, 0, 0);
 }
+.intro_container{
+    display: flex;
+    width: 20vw;
+}
+.intro{
+   text-align: center;
+   margin-top: 70px;
+   font-weight: 600; 
+   line-height: 2;
+    font-size: 14pt;
+}
+.jh_red{
+    color: red;
+}
+.jh_blue{
+    color: blue;
+}
+.jh_yellow{
+    color: yellow;
+}
 .modal_right{
     background-color: #242424;
-    height: 35vh;
-    width: 20vw;
+    width: 45%;
     padding: 66px;
+}
+.modal_right p{
+    color: #d9d9d9;
+    font-weight: 600;
 }
 .modal_right h2{
     font-size: 28pt;
@@ -32,10 +61,75 @@
  -webkit-text-stroke-width: 0.25px;
 -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+.modal_right_header{
+    padding-bottom: 80px;
+}
 .contact_form{
     display: flex;
     flex-direction: column;
+    color: #d9d9d9;
+}
+.contact_form input{
+    background-color: #242424;
+     border: none;
+     border-bottom: #d9d9d9 3px solid;
+     color: #d9d9d9;
+     padding: 8px; 
+     margin: 5px; 
+     outline:none;
+     box-sizing: border-box;
+}
+.name_input::selection {
+    border: none;
+}
+/* *hover animation */
+
+
+
+
+.contact_form textarea{
+    background-color: #242424;
+    border: none;
+    border-bottom: #d9d9d9 3px solid;
+    color: #d9d9d9;
+    padding: 8px; 
+    margin: 15px;
+    height: 7vh !important;
+    width: 26vw;
+}
+.contact_form h5{
+    padding-left: 10px;
+}
+.send_container{
+    display: flex;
+    justify-content: flex-end;
+}
+.send{
+    border: none;
+    background-color: #d9d9d9;
+    width: vw;
+    height: auto;
+    font-size: 16pt;
+    font-weight: 600;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 80px;
+    font-family: Inter;
+}
+
+
+
+
+.image_container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    left: 250px;
+    top: -185px;
 }
 .form_logo{
-opacity: 3%;
+    position: absolute;
+    width: 670px;
+    opacity: 3%;
+    overflow: hidden;
 }
