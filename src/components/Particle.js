@@ -3,7 +3,10 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import './Particle.css';
 import Modal from './Modal';
-import newlogo from '../assets/newJHlogo.png';
+import newlogo from '../assets/newJHlogo.png';  
+
+
+
 
 export default function App() {
   const modalRef = useRef(null);
@@ -40,9 +43,7 @@ export default function App() {
             <h1>Web Developer</h1>
             </div>
         </div>
-        <div className="header_right">
-        <h1>HOME || PROJECTS || CONTACT</h1>
-        </div>
+
 </div>
 
 <div className="white_square" onClick={toggleModalVisibility}>
@@ -54,6 +55,7 @@ export default function App() {
 
 
 <div ref={modalRef} style={{ display: 'none' }}>
+  <br></br>
         <Modal />
       </div>
 

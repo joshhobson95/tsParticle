@@ -1,0 +1,29 @@
+.header_outer{
+    display: flex;
+    justify-content: flex-end;
+}
+.header_right a{
+    outline: none;
+    text-decoration: none;
+    color: #111;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.header_right{
+    width: auto;
+    z-index: 10 !important;
+    text-align: center;
+    font-size: 28pt;
+    color: #111;
+    font-weight: 00;
+    line-height: normal;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    padding: 25px;
+    margin: 25px;
+    position: fixed;
+    }
+    .header_shell{
+        display: flex;
+        justify-content: space-between;
+    }

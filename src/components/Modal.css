@@ -3,7 +3,7 @@
     z-index: 3;
     display: flex;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: -75px;
 
 }
 .modal_main{
@@ -35,7 +35,8 @@ top: -4vh;
 -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 .intro_container{
-    display: flex;
+    display: flex; 
+    flex-direction: column;
     width: 20vw;
 }
 .intro{
@@ -156,4 +157,8 @@ top: -4vh;
     opacity: 3%;
     overflow: hidden;
     z-index: 1;
+}
+.resume_button{
+    margin-top: 70px;
+    padding: 25px;
 }

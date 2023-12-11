@@ -28,25 +28,7 @@ body{
     padding: 20px;
     padding-left: 50px;
     }
-.header_right{
-height: 10vh;
-width: auto;
-z-index: 10 !important;
-text-align: center;
-font-size: 28pt;
-color: #111;
-font-weight: 00;
-line-height: normal;
--webkit-text-stroke-width: 0.5px;
--webkit-text-stroke-color: rgb(255, 255, 255);
-display: flex;
-justify-content: flex-end;
-padding: 50px;
-}
-.header_shell{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 
 .white_square{
@@ -56,21 +38,60 @@ padding: 50px;
     height: 100px;
     transform: rotate(-45deg);  
     position: relative;
-    left: -270px;
+    left: -200px;
+    top: 0px;
     transition: all 0.4s ease;
-    
+    animation: pulse 2s infinite;
 }
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+        transform: rotate(-45deg);  
+		box-shadow: 0 0 0 0 rgba(233, 10, 10, 0.7);
+	}
+    25%{
+        transform: scale(1);
+        transform: rotate(-45deg);  
+		box-shadow: 0 0 0 10px rgba(255, 217, 0, 0);
+
+    }
+
+    50%{
+        transform: scale(0.95);
+        transform: rotate(-45deg);  
+		box-shadow: 0 0 0 0 rgba(15, 0, 224, 0.808)
+    }
+    60%{
+        transform: scale(1);
+        transform: rotate(-45deg);  
+		box-shadow: 0 0 0 10px rgba(255, 217, 0, 0);
+    }
+	75% {
+        transform: scale(0.95);
+        transform: rotate(-45deg);  
+		box-shadow: 0 0 0 0 rgba(224, 202, 0, 0.808)
+	}
+
+	100% {
+		transform: scale(1);
+        transform: rotate(-45deg);  
+		box-shadow: 0 0 0 0 rgba(0, 17, 255, 0);
+	}
+}
+
 .white_square.modal-open {
     transform: translate(-50%, -50%) scale(0.7);
     left: 78%; /* Adjust the desired horizontal position */
-    top: 20%; /* Adjust the desired vertical position */
+    top: 60px; 
     border-radius: 50%;
     background-color: #ffffff; /* Set the background color to match your design */
     width: 100px; /* Adjust the width of the blobbish sphere */
     height: 100px; /* Adjust the height of the blobbish sphere */
-    z-index: 6;
+    z-index: 6; 
+    animation: none;
   }
-
 
 
 .JoshHobson{
@@ -78,6 +99,7 @@ padding: 50px;
     color: #d9d9d9;
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: none;
+
 }
 .newlogo_container{
     position: absolute;
@@ -89,4 +111,4 @@ padding: 50px;
     z-index: 5; 
     width: 650px;
     margin-left: -100px;
-}
+}  

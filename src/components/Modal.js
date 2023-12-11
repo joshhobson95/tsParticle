@@ -13,6 +13,8 @@ function Modal() {
             <h2>About me.</h2>
             <div className='intro_container'>
                 <p className='intro'>Hello, my name is <span className='jh_red'>Josh Hobson </span>and I am a <span className='jh_blue'>Full Stack Web Developer. </span> Whether you are looking for a new member for your team, or just the freelancer who can get it all done, I am passionate to help you reach your Web Development needs. From <span className='jh_yellow'>design to database </span>, let me be the answer to “How can we get this done?”</p>
+
+                <button className='resume_button'>Download Resume</button>
             </div>
 
             </div>
