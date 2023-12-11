@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 #tsparticles {
     position: absolute;
     width: 100%;
@@ -13,7 +17,7 @@
     width: auto;
     z-index: 5 !important;
     text-align: center;
-    font-size: 20px;
+    font-size: 34pt;
     color: #111;
     font-weight: 00;
     line-height: normal;
@@ -29,7 +33,7 @@ height: 10vh;
 width: auto;
 z-index: 10 !important;
 text-align: center;
-font-size: 20px;
+font-size: 28pt;
 color: #111;
 font-weight: 00;
 line-height: normal;
@@ -43,6 +47,8 @@ padding: 50px;
     display: flex;
     justify-content: space-between;
 }
+
+
 .white_square{
     background-color: #D9D9D9;
     z-index: 2;
@@ -50,5 +56,37 @@ padding: 50px;
     height: 100px;
     transform: rotate(-45deg);  
     position: relative;
-    right: 300px;
+    left: -270px;
+    transition: all 0.4s ease;
+    
+}
+.white_square.modal-open {
+    transform: translate(-50%, -50%) scale(0.7);
+    left: 78%; /* Adjust the desired horizontal position */
+    top: 20%; /* Adjust the desired vertical position */
+    border-radius: 50%;
+    background-color: #ffffff; /* Set the background color to match your design */
+    width: 100px; /* Adjust the width of the blobbish sphere */
+    height: 100px; /* Adjust the height of the blobbish sphere */
+    z-index: 6;
+  }
+
+
+
+.JoshHobson{
+    font-size: 36pt !important; 
+    color: #d9d9d9;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: none;
+}
+.newlogo_container{
+    position: absolute;
+    top: 1000px;
+    left: -50px;
+}
+.newlogo{
+    position: absolute;
+    z-index: 5; 
+    width: 650px;
+    margin-left: -100px;
 }

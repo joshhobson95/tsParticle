@@ -17,6 +17,8 @@ function Modal() {
 
             </div>
             <div className='modal_right'>
+                <div className='close_modal_div'>
+                </div>
                 <div className='modal_right_header'>
                 <h2>Send me an Email.</h2>
                 <p>Lets get something working</p>
