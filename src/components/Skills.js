@@ -1,11 +1,13 @@
 import React from 'react'
 import './Skills.css'
+import ParticleBackdrop from './ParticleBackdrop'
 
 
 
 function Skills() {
   return (
     <div className='skills_outer'>
+
 
         <div className='skills_title_container'>
         <h2>Skills</h2>

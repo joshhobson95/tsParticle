@@ -1,70 +1,14 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-import './Particle.css';
-import Modal from './Modal';
-import newlogo from '../assets/newJHlogo.png';  
 
-
-
-
-export default function App() {
-  const modalRef = useRef(null);
-
+export default function ParticleBackdrop() {
   const particlesInit = async (main) => {
     await loadFull(main);
   };
 
-  const toggleModalVisibility = () => {
-    const whiteSquareElement = document.querySelector('.white_square');
-
-    if (whiteSquareElement.classList.contains('modal-open')) {
-      whiteSquareElement.classList.remove('modal-open');
-    } else {
-      whiteSquareElement.classList.add('modal-open');
-    }
-    
-    const modalElement = modalRef.current;
-    if (modalElement) {
-      modalElement.style.display =
-        modalElement.style.display === 'none' ? 'block' : 'none';
-    }
-  };
-
-
-
-
-    return (
-      <div className="App">
-<div className="header_shell">
-        <div className="header_left">
-            <div className="inner_left">
-            <h1 className="JoshHobson">Josh Hobson</h1>
-            <h1>Web Developer</h1>
-            </div>
-        </div>
-
-</div>
-
-<div className="white_square" onClick={toggleModalVisibility}>
-</div>
-<div className="white_square2">
-</div>
-<div className="white_square3">
-</div>
-
-
-<div ref={modalRef} style={{ display: 'none' }}>
-  <br></br>
-        <Modal />
-      </div>
-
-<div className="newlogo_container">
-  <img className="newlogo" src={newlogo} alt=""/>
-</div>
-
-
-         <Particles
+  return (
+    <Particles
         id="tsparticles"
         init={particlesInit}
         options={{
@@ -146,7 +90,5 @@ export default function App() {
           }
       }}
       />
-      </div>
-    );
-  }
-  
+  );
+}
